@@ -11,7 +11,7 @@ ul {
     height: 50px;
     margin: .5em;
 }
-.collapsible__header {
+.collapsibleHeader {
     display: flex;
 
 }
