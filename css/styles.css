@@ -1,38 +1,257 @@
-ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 15% 0 15%;
-    height: 3rem;
+body {
+  margin: .5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
 }
-.icon { 
-    display: flex;
-
-    width: 50px; 
-    height: 50px;
-    margin: .5em;
+/* Hearder*/
+#siteName {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
-.collapsibleHeader {
-    display: flex;
 
+h1 {
+  font-size: 1.8rem;
+}
+.navBars{
+  display: flex;
+  width: 3rem; 
+  height: 3rem;
+  margin: 1rem;
+  cursor: pointer
+}
+.shoppingCart {
+  display: flex;
+  width: 3rem; 
+  height: 3rem;
+  margin: 1rem;
 }
 .headerSection {
-    display: flex;
-    justify-content: space-around;
-
+  display: flex;
+  justify-content: space-between;
+} 
+.header {
+  display: flex;    
 }
+.searchBar {
+  display: flex;
+  margin: auto;
+  width: 90%;
+}
+.icon { 
+  display: flex;
+  width: 3rem; 
+  height: 3rem;
+  margin-top: 1rem;
+  cursor: pointer
+}
+
+.collapsibleHeader {
+  display: none;  
+}
+
 /* Grids */
 
 .grid {
-    display: grid;
+  display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* Adoptions*/
+.adopt {
+  display: grid;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.adoptImage {
+  display: inline-block;
+  margin: auto;
+}
+.adoptHeading {
+  text-align: center;
+}
+.adoptButton {
+  display: flex;
+  margin: .5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+#adopt2 {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .adopt {
+    display: flex;
+    margin: 2rem;
+    justify-content: space-around;
+  }
+  .adoptContent {
+    display: block;
+    align-items: center;
+    padding-top: 2rem;
+    margin-right: 20%;
+  }
+
+  .adoptHeading {
+    display: flex;
+    justify-content: left;
+    margin: 2rem 0 2rem 0;    
+  }
+  .adoptButton {
+    display: inline-block;
+    width: 15rem;
+  }
+  .adoptImage {
+    margin-left: 15%;
+  }
+  #adopt1 {
+    display: none;
+  }
+  #adopt2 {
+    display: flex;
+  }
+
+}
+
+/* Grooming Banner*/
+.grooming {
+  display: grid;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.groomingImage {
+  display: inline-block;
+  margin: auto;
+}
+#groom2 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .grooming {
+    display: flex;
+    margin: 2rem;
+    justify-content: space-around;
+  }
+  .groomingContent {
+    display: block;
+    align-items: center;
+    padding-top: 2rem;
+    margin-left: 20%;
+  }
+
+  .adoptHeading {
+    display: flex;
+    justify-content: left;
+    margin: 2rem 0 2rem 0;    
+  }
+  .adoptButton {
+    display: inline-block;
+    width: 15rem;
+  }
+  .adoptImage {
+    margin-right: 15%;
+  }
+  #groom1 {
+    display: none;
+  }
+  #groom2 {
+    display: flex;
+  }
+}
+
+/* Product Banner*/
+.product {
+  display: grid;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .product {
+    display: flex;
+    margin: 2rem;
+    justify-content: space-around;
+  }
+  .productContent {
+    display: block;
+    align-items: center;
+    padding-top: 2rem;
+    margin-right: 20%;
+  }
+
+  .adoptHeading {
+    display: flex;
+    justify-content: left;
+    margin: 2rem 0 2rem 0;    
+  }
+  .adoptButton {
+    display: inline-block;
+    width: 15rem;
+  }
+  .adoptImage {
+    margin-left: 15%;
+  }
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .header {
+    display: flex;    
+  }
+  .headerSection {
+    display: flex;
+    justify-content: space-between;
+  } 
+  .navBars{
+    display: none;
+  } 
+  .navMenu {
+    display: flex;
+    justify-content: space-around;
+  }
+  .searchBar {
+    display: flex;
+    margin-top: -3%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    width: 15%;
+  }
+  .icon { 
+    display: flex;
+    width: 2rem; 
+    height: 2rem;
+    margin: 0 .5rem 0 0;
+    cursor: pointer
+}
+.shoppingCart, .dog40 {
+  display: flex;
+  width: 3rem; 
+  height: 3rem;
+  margin: 1rem;
+}
+.navPage {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+.collapsibleHeader {
+  display: flex;  
+}  
+}
   
-  @media screen and (min-width: 768px) {
-    .grid--1x2 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  @media screen and (min-width: 1024px) {
-    .grid--1x3 {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
+

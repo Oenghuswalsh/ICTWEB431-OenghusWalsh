@@ -13,60 +13,107 @@
   </head>
   <body>
     <header>
-      <div class="collapsibleHeader dropDown">
-        <svg class="icon navBars">
-          <use xlink:href="images/sprite.svg#dropdown"></use>
-        </svg>
-        <svg class="icon">
-          <use xlink:href="images/sprite.svg#dog-40"></use>
-        </svg>
-        <h1>LocalsRUs Pet Shop</h1>
+      <section class="headerSection">
+        <div class="header dropDown">
+          <svg class="navBars">
+            <use xlink:href="images/sprite.svg#dropdown"></use>
+          </svg>
+        </div>
+        <div class="header">
+          <svg class="icon dog40">
+            <use xlink:href="images/sprite.svg#dog-40"></use>
+          </svg>
+          <h1 id="siteName">LocalsRUs Pet Shop</h1>
+        </div>
+        <div class="header">
+          <svg class="icon shoppingCart">
+            <use xlink:href="images/sprite.svg#shoppingcart"></use>
+          </svg>
+        </div>
+      </section>
+      <div>
+        <input class="searchBar" type="text" placeholder="Search" />
       </div>
-      <svg class="icon shoppingCart">
-        <use xlink:href="images/sprite.svg#shoppingcart"></use>
-      </svg>
-      <nav class="grid grid--1x3 navMenu">
-        <section class="headerSection">
+      <nav class="grid grid--1x5 navMenu">
+        <section class="navItem">
           <div class="collapsibleHeader">
             <svg class="icon">
-              <use xlink:href="images/sprite.svg#dog-40"></use>
+              <use xlink:href="images/sprite.svg#home-24"></use>
             </svg>
-            <h2>Home</h2>
+            <h2 class="navPage">Home</h2>
           </div>
         </section>
-        <section class="headerSection">
+        <section class="navItem">
           <div class="collapsibleHeader">
             <svg class="icon">
               <use xlink:href="images/sprite.svg#question-mark-24"></use>
             </svg>
-            <h2>About us</h2>
+            <h2 class="navPage">About us</h2>
           </div>
         </section>
-        <section class="headerSection">
+        <section class="navItem">
           <div class="collapsibleHeader">
             <svg class="icon">
               <use xlink:href="images/sprite.svg#puppy"></use>
             </svg>
-            <h2>Adoptions</h2>
+            <h2 class="navPage">Adoptions</h2>
           </div>
         </section>
-        <section class="headerSection">
+        <section class="navItem">
           <div class="collapsibleHeader">
             <svg class="icon">
               <use xlink:href="images/sprite.svg#Why-adoptions"></use>
             </svg>
-            <h2>Why Adopt</h2>
+            <h2 class="navPage">Why Adopt</h2>
           </div>
         </section>
-        <section class="headerSection">
+        <section class="navItem">
           <div class="collapsibleHeader">
             <svg class="icon">
               <use xlink:href="images/sprite.svg#phone-24"></use>
             </svg>
-            <h2>Contact</h2>
+            <h2 class="navPage">Contact</h2>
           </div>
         </section>
       </nav>
     </header>
+    <section class="adopt">
+      <div>
+        <h1 id="adopt1" class="adoptHeading">Pet Adoptions from LocalsRUs</h1>
+      </div>
+      <div class="adoptImage">
+        <a href="https://placeholder.com"><img src="https://via.placeholder.com/300.png?text=Picture+of+cute+pet"></a>
+      </div>
+      <div class="adoptContent">
+        <h1 id="adopt2" class="adoptHeading">Pet Adoptions from LocalsRUs</h1>
+        <h1 class="adoptHeading">Happy animals needing happy homes</h1>
+        <button class="adoptButton">Search Available Pets</button>
+        <button class="adoptButton">Register interest</button>
+      </div>
+    </section>
+    <section class="grooming">
+      <div id="groom1" class="groomingImage">
+        <a href="https://placeholder.com"><img src="https://via.placeholder.com/300.png?text=Picture+of+cute+pet"></a>
+      </div>
+      <div class="groomingContent">
+        <h1 class="adoptHeading">LocalsRUs Grooming services</h1>
+        <h1 class="adoptHeading">25% Discount for all LocalsRUs members</h1>
+        <button class="adoptButton">Bookings</button>
+        <button class="adoptButton">Register</button>
+      </div>
+      <div id="groom2" class="groomingImage">
+        <a href="https://placeholder.com"><img src="https://via.placeholder.com/300.png?text=Picture+of+cute+pet"></a>
+      </div>
+    </section>
+    <section class="product">
+      <div class="adoptImage">
+        <a href="https://placeholder.com"><img src="https://via.placeholder.com/300.png?text=Picture+of+special+product"></a>
+      </div>
+      <div class="productContent">
+        <h1 class="adoptHeading">Product of the week</h1>
+        <h1 class="adoptHeading">Save up to 50% on these brands</h1>
+        <button class="adoptButton">Shop Nows</button>
+      </div>
+    </section>
   </body>
 </html>
