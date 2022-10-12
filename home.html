@@ -13,69 +13,72 @@
   </head>
   <body>
     <header>
-      <section class="headerSection">
-        <div class="header dropDown">
-          <svg class="navBars">
-            <use xlink:href="images/sprite.svg#dropdown"></use>
-          </svg>
-        </div>
-        <div class="header">
-          <svg class="icon dog40">
-            <use xlink:href="images/sprite.svg#dog-40"></use>
-          </svg>
-          <h1 id="siteName">LocalsRUs Pet Shop</h1>
-        </div>
-        <div class="header">
-          <svg class="icon shoppingCart">
-            <use xlink:href="images/sprite.svg#shoppingcart"></use>
-          </svg>
-        </div>
-      </section>
       <div>
-        <input class="searchBar" type="text" placeholder="Search" />
+        <div class="header">
+          <div>
+            <input class="searchBar" type="text" placeholder="Search" />
+          </div>
+          <div class="shoppingCart">
+            <svg>
+              <use xlink:href="images/sprite.svg#shoppingcart"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div>
+          <nav class="navMenu collapsible">
+            <div class="headerSection">
+              <svg class="dog40">
+                <use xlink:href="images/sprite.svg#dog-40"></use>
+              </svg>
+              <h1 id="siteName">LocalsRUs Pet Shop</h1>
+              <svg class="navBars dropDown">
+                <use xlink:href="images/sprite.svg#dropdown"></use>
+              </svg>
+            </div>
+            <section class="navItem collapsible__content">
+              <div class="collapsibleHeader">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#home-24"></use>
+                </svg>
+                <h2 class="navPage">Home</h2>
+              </div>
+            </section>
+            <section class="navItem collapsible__content">
+              <div class="collapsibleHeader">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#question-mark-24"></use>
+                </svg>
+                <h2 class="navPage">About us</h2>
+              </div>
+            </section>
+            <section class="navItem collapsible__content">
+              <div class="collapsibleHeader">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#puppy"></use>
+                </svg>
+                <h2 class="navPage">Adoptions</h2>
+              </div>
+            </section>
+            <section class="navItem collapsible__content">
+              <div class="collapsibleHeader">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#Why-adoptions"></use>
+                </svg>
+                <h2 class="navPage">Why Adopt</h2>
+              </div>
+            </section>
+            <section class="navItem collapsible__content">
+              <div class="collapsibleHeader">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#phone-24"></use>
+                </svg>
+                <h2 class="navPage">Contact</h2>
+              </div>
+            </section>
+          </nav>
+        </div>
       </div>
-      <nav class="grid grid--1x5 navMenu">
-        <section class="navItem">
-          <div class="collapsibleHeader">
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#home-24"></use>
-            </svg>
-            <h2 class="navPage">Home</h2>
-          </div>
-        </section>
-        <section class="navItem">
-          <div class="collapsibleHeader">
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#question-mark-24"></use>
-            </svg>
-            <h2 class="navPage">About us</h2>
-          </div>
-        </section>
-        <section class="navItem">
-          <div class="collapsibleHeader">
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#puppy"></use>
-            </svg>
-            <h2 class="navPage">Adoptions</h2>
-          </div>
-        </section>
-        <section class="navItem">
-          <div class="collapsibleHeader">
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#Why-adoptions"></use>
-            </svg>
-            <h2 class="navPage">Why Adopt</h2>
-          </div>
-        </section>
-        <section class="navItem">
-          <div class="collapsibleHeader">
-            <svg class="icon">
-              <use xlink:href="images/sprite.svg#phone-24"></use>
-            </svg>
-            <h2 class="navPage">Contact</h2>
-          </div>
-        </section>
-      </nav>
     </header>
     <section class="adopt">
       <div>
@@ -349,5 +352,6 @@
         <h2 class="copyright">&copy; 2022 LocalsRUs Pet Shop</h2>
       </footer>
     </section>
+    <script src="/Javascript/main.js"></script>
   </body>
 </html>
