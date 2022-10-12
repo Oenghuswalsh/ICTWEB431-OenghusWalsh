@@ -3,32 +3,73 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
 }
-
-.logoName {
-  max-height: 0;
-  opacity: 0;
+.grid3x3 {
+  display: grid;
+  grid-template-columns: repeat(3, 5fr);
 }
-
-.header {
+.dog40 {
   display: flex;
-  justify-content: space-between;
-}
-
-/* Hearder*/
-h1 {
-  font-size: 1.8rem;
-}
-.collapsible {
-  justify-self: right;
-}
-.navBars {
-  display: flex;
-  width: 3rem;
-  height: 3rem;
-  margin: 0.5rem 1rem;
+  justify-self: center;
+  align-self: center;
+  grid-area: 2 / 1 / 5 / 2;
+  opacity: 1;
+  width: 20vw;
+  height: 20vh;
   cursor: pointer;
 }
-.navMenu {
+.siteName {
+  display: flex;
+  grid-area: 2 / 2 / 5 / 3;
+  opacity: 1;
+  font-size: 1.8rem;
+  justify-self: right;
+  align-self: center;
+  font-size: 1.6rem;
+  width: 50vw;
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.searchBar {
+  display: flex;
+  grid-area: 2 / 3 / 3 / 4;
+  justify-self: right;
+  align-items: center;
+  width: 10vw;
+}
+.search {
+  width: 30px;
+}
+.shoppingCart {
+  display: flex;
+  grid-area: 3 / 3 / 4 / 4;
+  justify-self: right;
+  align-items: center;
+  width: 10vw;
+  height: 10vw;
+  cursor: pointer;
+}
+.cart {
+  width: 3rem;
+  height: 3rem;
+}
+.dropDown {
+  display: flex;
+  grid-area: 4 / 3 / 5 / 4;
+  justify-self: right;
+  align-items: center;
+  width: 10vw;
+  height: 10vw;
+  cursor: pointer;
+}
+.navBars {
+  width: 3rem;
+  height: 3rem;
+}
+
+/*.navMenu {
   display: grid;
   grid-template-columns: repeat(1, 5fr);
   max-height: 100vh;
@@ -41,105 +82,89 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
   cursor: pointer;
-}
+} 
 .collapsibleHeader {
   display: flex;
   max-width: fit-content;
 }
 
-.searchBar {
-  display: flex;
-  margin: 1rem;
-  width: 150%;
-}
-.shoppingCart {
-  display: flex;
-  justify-self: right;
-  width: 3rem;
-  height: 3rem;
-  cursor: pointer;
-}
-.headerSection {
-  display: flex;
-  justify-content: space-between;
-  opacity: 1;
-}
-#siteName {
-  opacity: 1;
-  align-self: center;
-  font-size: 1.6rem;
-}
-
-.dog40 {
-  display: flex;
-  opacity: 1;
-  width: 3rem;
-  height: 3rem;
-  margin: 1rem;
-  cursor: pointer;
-}
 .icon {
   display: flex;
   width: 2rem;
   height: 2rem;
   margin: 0 0.5rem 0 0;
   cursor: pointer;
-}
-
+}*/
 @media screen and (min-width: 1024px) {
-  .header {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-  }
-  .headerSection {
-    display: none;
-  }
-  .mainHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    opacity: 1;
-  }
-
-  .navMenu {
+  .grid3x3 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
+    grid-template-columns: repeat(3, 4fr);
   }
-
-  .navItem {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .searchBar {
-    display: flex;
-    width: 100%;
-    margin: 0 1rem 0 0;
-  }
-  .icon {
-    display: flex;
-    width: 2rem;
-    height: 2rem;
-    margin: 0 0.5rem 0 0;
-    cursor: pointer;
-  }
-  .shoppingCart,
   .dog40 {
     display: flex;
-    width: 3rem;
-    height: 3rem;
-    margin: 1rem;
+    justify-self: right;
+    align-self: center;
+    grid-area: 1 / 1 / 5 / 2;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
   }
-  .navPage {
-    font-size: 2rem;
+  .siteName {
+    display: flex;
+    grid-area: 1 / 2 / 5 / 3;
+    opacity: 1;
+    font-size: 1.8rem;
+    justify-self: left;
+    align-self: center;
+    font-size: 1.6rem;
+    width: fit-content;
+    height: fit-content;
+  }
+  h1 {
     margin-top: 0;
     margin-bottom: 0;
+    text-align: center;
+  }
+  .searchBar {
+    display: flex;
+    grid-area: 2 / 3 / 3 / 4;
+    justify-self: right;
+    align-items: center;
+    width: fit-content;
+  }
+  .search {
+    width: 300px;
+  }
+  .shoppingCart {
+    display: flex;
+    grid-area: 3 / 3 / 4 / 4;
+    justify-self: right;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+  }
+  .cart {
+    width: 3rem;
+    height: 3rem;
+  }
+  .dropDown {
+    display: none;
+    grid-area: 4 / 3 / 5 / 4;
+    justify-self: right;
+    align-items: center;
+    height: fit-content;
+    cursor: pointer;
+  }
+  .navBars {
+    display: none;
+    width: 3rem;
+    height: 3rem;
   }
 }
 
-/*collapsible*/
+/*collapsible
 .collapsible__content {
   max-height: 0;
   max-width: 0;
@@ -151,17 +176,17 @@ h1 {
   max-width: 100vh;
   opacity: 1;
 }
-
 @media screen and (min-width: 1024px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+}*/
 
 /* Adoptions*/
 .adopt {
   display: grid;
   justify-content: center;
+  margin-top: 1rem;
 }
 .adoptImage {
   display: inline-block;
