@@ -187,7 +187,7 @@ h1 {
 }
 .adoptButton {
   display: flex;
-  margin: 0.5rem auto;
+  margin: 1rem auto;
   height: 2rem;
   border-radius: 1rem;
   width: 90%;
@@ -197,6 +197,7 @@ h1 {
 #adopt2 {
   display: none;
 }
+
 @media screen and (min-width: 1024px) {
   .adopt {
     display: flex;
@@ -224,7 +225,8 @@ h1 {
   }
   .adoptButton {
     display: inline-block;
-    width: 15rem;
+    text-align: center;
+    width: 90%;
   }
   .adoptImage {
     margin: 0 0 0 15%;
@@ -233,15 +235,18 @@ h1 {
     display: none;
   }
   #adopt2 {
-    display: flex;
+    display: grid;
+    text-align: center;
   }
 }
+
 /* About us page */
 .aboutPage {
   display: grid;
   justify-content: center;
   margin-top: 1rem;
 }
+
 .aboutImages {
   display: grid;
 }
@@ -260,15 +265,14 @@ h1 {
 }
 .aboutPageButton {
   display: grid;
+  text-align: center;
   margin: 1rem auto;
   align-items: center;
   height: 2rem;
   border-radius: 1rem;
   width: 90%;
 }
-#adopt2 {
-  display: none;
-}
+
 @media screen and (min-width: 1024px) {
   .aboutPage {
     display: grid;
@@ -280,9 +284,9 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
   }
   .aboutPagePetImage {
-    display: flex;
-    justify-content: space-around;
-    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    margin: 1rem auto;
   }
   .aboutPageHeading {
     display: grid;
@@ -297,19 +301,12 @@ h1 {
   }
   .aboutPageButton {
     display: grid;
-    margin: 1rem auto;
     text-align: center;
     align-items: center;
+    margin: 1rem auto;
     height: 2rem;
     border-radius: 1rem;
     width: 20%;
-  }
-  #adopt1 {
-    display: none;
-  }
-  #adopt2 {
-    display: grid;
-    text-align: center;
   }
 }
 /* Pet cards */
@@ -344,15 +341,32 @@ h1 {
   margin: 0.3rem auto;
   font-weight: 400;
 }
+.petCard2 {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
-  .horizontal {
+  .petCard {
+    display: block;
+  }
+  .pet {
+    margin: auto;
+  }
+  .catdogButton {
+    display: grid;
+    margin: 2rem auto;
+    height: 2rem;
+    border-radius: 1rem;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .petCard1 {
     display: none;
   }
-  .specialProducts {
-    display: flex;
-  }
-  .special {
-    margin: auto;
+  .petCard2 {
+    display: block;
   }
 }
 
