@@ -174,14 +174,20 @@ h1 {
 }
 .adoptImage {
   display: inline-block;
-  margin: auto;
+  margin: 1rem auto;
 }
 .adoptHeading {
+  text-align: center;
+  margin: 1rem auto;
+}
+.adoptPara {
+  display: flex;
+  font-size: 1.3rem;
   text-align: center;
 }
 .adoptButton {
   display: flex;
-  margin: 0.5rem;
+  margin: 0.5rem auto;
   height: 2rem;
   border-radius: 1rem;
   width: 90%;
@@ -198,10 +204,14 @@ h1 {
     justify-content: space-around;
   }
   .adoptContent {
-    display: block;
+    display: inline-block;
     align-items: center;
+    justify-content: left;
     padding-top: 2rem;
-    margin-right: 20%;
+    margin-right: 15%;
+  }
+  .adoptions {
+    display: none;
   }
 
   .adoptHeading {
@@ -209,18 +219,140 @@ h1 {
     justify-content: left;
     margin: 2rem 0 2rem 0;
   }
+  .adoptPara {
+    display: flex;
+  }
   .adoptButton {
     display: inline-block;
     width: 15rem;
   }
   .adoptImage {
-    margin-left: 15%;
+    margin: 0 0 0 15%;
   }
   #adopt1 {
     display: none;
   }
   #adopt2 {
     display: flex;
+  }
+}
+/* About us page */
+.aboutPage {
+  display: grid;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.aboutImages {
+  display: grid;
+}
+.aboutPagePetImage {
+  display: inline-block;
+  margin: 1rem auto;
+}
+.aboutPageHeading {
+  text-align: center;
+  margin: 1rem auto;
+}
+.aboutPagePara {
+  display: flex;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.aboutPageButton {
+  display: grid;
+  margin: 1rem auto;
+  align-items: center;
+  height: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+}
+#adopt2 {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .aboutPage {
+    display: grid;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .aboutImages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aboutPagePetImage {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+  }
+  .aboutPageHeading {
+    display: grid;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .aboutPagePara {
+    display: flex;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0 30rem;
+  }
+  .aboutPageButton {
+    display: grid;
+    margin: 1rem auto;
+    text-align: center;
+    align-items: center;
+    height: 2rem;
+    border-radius: 1rem;
+    width: 20%;
+  }
+  #adopt1 {
+    display: none;
+  }
+  #adopt2 {
+    display: grid;
+    text-align: center;
+  }
+}
+/* Pet cards */
+
+.petCard {
+  display: block;
+  width: 300px;
+  margin: auto auto 2rem auto;
+}
+.pet {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  border: solid 2px black;
+  width: 300px;
+  margin: auto;
+}
+.petImage {
+  width: 200px;
+}
+.petButton {
+  display: grid;
+  margin: 2rem auto;
+  height: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.petDetail {
+  margin: 0.3rem auto;
+  font-weight: 400;
+}
+@media screen and (min-width: 1024px) {
+  .horizontal {
+    display: none;
+  }
+  .specialProducts {
+    display: flex;
+  }
+  .special {
+    margin: auto;
   }
 }
 
@@ -237,6 +369,15 @@ h1 {
 #groom2 {
   display: none;
 }
+.groomingButton {
+  display: flex;
+  margin: 0.5rem auto;
+  height: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
 
 @media screen and (min-width: 1024px) {
   .grooming {
@@ -251,17 +392,17 @@ h1 {
     margin-left: 20%;
   }
 
-  .adoptHeading {
+  .groomingHeading {
     display: flex;
     justify-content: left;
     margin: 2rem 0 2rem 0;
   }
-  .adoptButton {
+  .groomingButton {
     display: inline-block;
     width: 15rem;
   }
-  .adoptImage {
-    margin-right: 15%;
+  .groomingImage {
+    margin-right: 20%;
   }
   #groom1 {
     display: none;
@@ -274,8 +415,17 @@ h1 {
 /* Product  of the week Banner*/
 .product {
   display: grid;
-  justify-content: center;
+  justify-items: center;
   margin-top: 3rem;
+}
+.productButton {
+  display: flex;
+  margin: 0.5rem auto;
+  height: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -288,19 +438,19 @@ h1 {
     display: block;
     align-items: center;
     padding-top: 2rem;
-    margin-right: 20%;
+    margin-right: 15%;
   }
 
-  .adoptHeading {
+  .productHeading {
     display: flex;
     justify-content: left;
     margin: 2rem 0 2rem 0;
   }
-  .adoptButton {
+  .productButton {
     display: inline-block;
     width: 15rem;
   }
-  .adoptImage {
+  .productImage {
     margin-left: 15%;
   }
 }
