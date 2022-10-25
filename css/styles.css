@@ -41,6 +41,11 @@ h1 {
   margin-bottom: 0;
   text-align: center;
 }
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
 .searchBar {
   display: flex;
   grid-area: 2 / 3 / 3 / 4;
@@ -109,6 +114,12 @@ h1 {
   }
 
   h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 3rem;
+  }
+  h3 {
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
@@ -488,6 +499,9 @@ h1 {
 }
 
 /* Product  of the week Banner*/
+h4 {
+  font-size: 1.5rem;
+}
 .product {
   display: grid;
   justify-items: center;
@@ -504,6 +518,9 @@ h1 {
 }
 
 @media screen and (min-width: 1024px) {
+  h4 {
+    font-size: 1.5rem;
+  }
   .product {
     display: flex;
     margin: 2rem;
@@ -584,6 +601,9 @@ h1 {
 }
 
 /* Footer */
+h5 {
+  font-size: 1.5rem;
+}
 footer {
   background-color: rgb(250, 234, 205);
   color: blue;
@@ -621,7 +641,8 @@ footer {
   text-align: center;
 }
 footer,
-h2 {
+h6 {
+  font-size: 1rem;
   margin-bottom: 0;
 }
 
@@ -710,11 +731,11 @@ ul {
 
 .contactItem {
   display: flex;
-  padding: 0m;
+  padding: 0;
   color: black;
   font-weight: 600;
 }
-h4 {
+h2 {
   font-size: 2rem;
   margin: 0;
   padding: 0.5rem;
@@ -783,7 +804,7 @@ h4 {
     color: black;
     font-weight: 600;
   }
-  h4 {
+  h2 {
     font-size: 2rem;
     margin: 0;
     padding: 0.5rem;
